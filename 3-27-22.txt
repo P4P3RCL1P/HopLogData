@@ -1,0 +1,79 @@
+2022/03/27 11:46:49 - Hop - Projects enabled
+2022/03/27 11:46:49 - Hop - Enabling project : 'default'
+2022/03/27 11:47:45 - Hop - Starting workflow
+2022/03/27 11:47:45 - demoLineage - Start of workflow execution
+2022/03/27 11:47:45 - demoLineage - Logging workflow information to Neo4j connection : Example
+2022/03/27 11:47:48 - demoLineage - ERROR: Error logging to Neo4j:
+2022/03/27 11:47:48 - demoLineage - ERROR: org.neo4j.driver.exceptions.ServiceUnavailableException: Failed to discover an available server
+2022/03/27 11:47:48 - demoLineage - 	at org.neo4j.driver.GraphDatabase.routingDriver(GraphDatabase.java:179)
+2022/03/27 11:47:48 - demoLineage - 	at org.apache.hop.neo4j.shared.NeoConnection.getDriver(NeoConnection.java:407)
+2022/03/27 11:47:48 - demoLineage - 	at org.apache.hop.neo4j.shared.NeoConnection.getSession(NeoConnection.java:175)
+2022/03/27 11:47:48 - demoLineage - 	at org.apache.hop.neo4j.logging.xp.WorkflowLoggingExtensionPoint.callExtensionPoint(WorkflowLoggingExtensionPoint.java:87)
+2022/03/27 11:47:48 - demoLineage - 	at org.apache.hop.neo4j.logging.xp.WorkflowLoggingExtensionPoint.callExtensionPoint(WorkflowLoggingExtensionPoint.java:49)
+2022/03/27 11:47:48 - demoLineage - 	at org.apache.hop.core.extension.ExtensionPointMap.callExtensionPoint(ExtensionPointMap.java:147)
+2022/03/27 11:47:48 - demoLineage - 	at org.apache.hop.core.extension.ExtensionPointHandler.callExtensionPoint(ExtensionPointHandler.java:38)
+2022/03/27 11:47:48 - demoLineage - 	at org.apache.hop.workflow.Workflow.executeFromStart(Workflow.java:368)
+2022/03/27 11:47:48 - demoLineage - 	at org.apache.hop.workflow.Workflow.startExecution(Workflow.java:301)
+2022/03/27 11:47:48 - demoLineage - 	at org.apache.hop.ui.hopgui.file.workflow.HopGuiWorkflowGraph.lambda$start$9(HopGuiWorkflowGraph.java:3535)
+2022/03/27 11:47:48 - demoLineage - 	at java.base/java.lang.Thread.run(Thread.java:835)
+2022/03/27 11:47:48 - demoLineage - exec(0, 0, Start)
+2022/03/27 11:47:48 - Start - Starting action
+2022/03/27 11:47:48 - demoLineage - Starting action [Check DB connections]
+2022/03/27 11:47:48 - demoLineage - exec(1, 0, Check DB connections)
+2022/03/27 11:47:48 - Check DB connections - Starting action
+2022/03/27 11:47:48 - dvdrental - New database connection defined
+2022/03/27 11:47:50 - Check DB connections - ERROR: Cannot connect to database [dvdrental] (connection [dvdrental]). Exception : [org.apache.hop.core.exception.HopDatabaseException: 
+2022/03/27 11:47:50 - Check DB connections - Error occurred while trying to connect to the database
+2022/03/27 11:47:50 - Check DB connections - 
+2022/03/27 11:47:50 - Check DB connections - Error connecting to database: (using class org.postgresql.Driver)
+2022/03/27 11:47:50 - Check DB connections - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2022/03/27 11:47:50 - Check DB connections - 
+2022/03/27 11:47:50 - Check DB connections - ]
+2022/03/27 11:47:50 - Check DB connections - =======================================
+2022/03/27 11:47:50 - Check DB connections - [1] connections were in error.
+2022/03/27 11:47:50 - Check DB connections - [0] connections were successfully checked.
+2022/03/27 11:47:50 - Check DB connections - =======================================
+2022/03/27 11:47:50 - demoLineage - Starting action [Query for recent changes]
+2022/03/27 11:47:50 - demoLineage - exec(2, 0, Query for recent changes)
+2022/03/27 11:47:50 - Query for recent changes - Starting action
+2022/03/27 11:47:50 - dvdrental - New database connection defined
+2022/03/27 11:47:52 - Query for recent changes - ERROR: An error occurred executing this action : 
+2022/03/27 11:47:52 - Query for recent changes - Error occurred while trying to connect to the database
+2022/03/27 11:47:52 - Query for recent changes - 
+2022/03/27 11:47:52 - Query for recent changes - Error connecting to database: (using class org.postgresql.Driver)
+2022/03/27 11:47:52 - Query for recent changes - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections.
+2022/03/27 11:47:52 - demoLineage - Starting action [Check Neo4j Connection]
+2022/03/27 11:47:52 - demoLineage - exec(3, 0, Check Neo4j Connection)
+2022/03/27 11:47:52 - Check Neo4j Connection - Starting action
+2022/03/27 11:47:54 - Check Neo4j Connection - ERROR: Error on connection: Example
+2022/03/27 11:47:54 - Check Neo4j Connection - ERROR: java.lang.Exception: Unable to connect to database 'Example' : Failed to discover an available server
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.neo4j.shared.NeoConnection.test(NeoConnection.java:210)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.neo4j.actions.check.CheckConnections.execute(CheckConnections.java:118)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.workflow.Workflow.executeFromStart(Workflow.java:585)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.workflow.Workflow.executeFromStart(Workflow.java:717)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.workflow.Workflow.executeFromStart(Workflow.java:717)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.workflow.Workflow.executeFromStart(Workflow.java:717)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.workflow.Workflow.executeFromStart(Workflow.java:414)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.workflow.Workflow.startExecution(Workflow.java:301)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.ui.hopgui.file.workflow.HopGuiWorkflowGraph.lambda$start$9(HopGuiWorkflowGraph.java:3535)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at java.base/java.lang.Thread.run(Thread.java:835)
+2022/03/27 11:47:54 - Check Neo4j Connection - Caused by: org.neo4j.driver.exceptions.ServiceUnavailableException: Failed to discover an available server
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.neo4j.driver.GraphDatabase.routingDriver(GraphDatabase.java:179)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.neo4j.shared.NeoConnection.getDriver(NeoConnection.java:407)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.neo4j.shared.NeoConnection.test(NeoConnection.java:196)
+2022/03/27 11:47:54 - Check Neo4j Connection - 	... 9 more
+2022/03/27 11:47:54 - Check Neo4j Connection - 1 Neo4j connections tested with 1 error(s)
+2022/03/27 11:47:54 - demoLineage - Starting action [NEO4J CONNECTION ERRORS]
+2022/03/27 11:47:54 - demoLineage - exec(4, 0, NEO4J CONNECTION ERRORS)
+2022/03/27 11:47:54 - NEO4J CONNECTION ERRORS - Starting action
+2022/03/27 11:47:54 - demoLineage - Finished action [NEO4J CONNECTION ERRORS] (result=[true])
+2022/03/27 11:47:54 - demoLineage - Finished action [Check Neo4j Connection] (result=[true])
+2022/03/27 11:47:54 - demoLineage - Finished action [Query for recent changes] (result=[true])
+2022/03/27 11:47:54 - demoLineage - Starting action [DB CONNECTION ERRORS]
+2022/03/27 11:47:54 - demoLineage - exec(2, 0, DB CONNECTION ERRORS)
+2022/03/27 11:47:54 - DB CONNECTION ERRORS - Starting action
+2022/03/27 11:47:54 - demoLineage - Finished action [DB CONNECTION ERRORS] (result=[true])
+2022/03/27 11:47:54 - demoLineage - Finished action [Check DB connections] (result=[true])
+2022/03/27 11:47:54 - demoLineage - Workflow execution finished
+2022/03/27 11:47:54 - Hop - Workflow execution has ended
+2022/03/27 11:47:54 - demoLineage - Workflow duration : 9.325 seconds [  9.324" ]
