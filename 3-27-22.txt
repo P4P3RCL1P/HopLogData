@@ -16,35 +16,35 @@
 2022/03/27 11:47:48 - demoLineage - 	at org.apache.hop.workflow.Workflow.startExecution(Workflow.java:301) - 1
 2022/03/27 11:47:48 - demoLineage - 	at org.apache.hop.ui.hopgui.file.workflow.HopGuiWorkflowGraph.lambda$start$9(HopGuiWorkflowGraph.java:3535) - 1
 2022/03/27 11:47:48 - demoLineage - 	at java.base/java.lang.Thread.run(Thread.java:835) - 1
-2022/03/27 11:47:48 - demoLineage - exec(0, 0, Start)
-2022/03/27 11:47:48 - Start - Starting action
-2022/03/27 11:47:48 - demoLineage - Starting action [Check DB connections]
-2022/03/27 11:47:48 - demoLineage - exec(1, 0, Check DB connections)
-2022/03/27 11:47:48 - Check DB connections - Starting action
-2022/03/27 11:47:48 - dvdrental - New database connection defined
+2022/03/27 11:47:48 - demoLineage - exec(0, 0, Start) - 0
+2022/03/27 11:47:48 - Start - Starting action - 0
+2022/03/27 11:47:48 - demoLineage - Starting action [Check DB connections] - 0
+2022/03/27 11:47:48 - demoLineage - exec(1, 0, Check DB connections) - 0
+2022/03/27 11:47:48 - Check DB connections - Starting action - 0
+2022/03/27 11:47:48 - dvdrental - New database connection defined - 0
 2022/03/27 11:47:50 - Check DB connections - ERROR: Cannot connect to database [dvdrental] (connection [dvdrental]). Exception : [org.apache.hop.core.exception.HopDatabaseException: - 1
 2022/03/27 11:47:50 - Check DB connections - Error occurred while trying to connect to the database - 1
 2022/03/27 11:47:50 - Check DB connections -
 2022/03/27 11:47:50 - Check DB connections - Error connecting to database: (using class org.postgresql.Driver) - 1
 2022/03/27 11:47:50 - Check DB connections - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. - 1
-2022/03/27 11:47:50 - Check DB connections - 
-2022/03/27 11:47:50 - Check DB connections - ]
-2022/03/27 11:47:50 - Check DB connections - =======================================
+2022/03/27 11:47:50 - Check DB connections - - 0
+2022/03/27 11:47:50 - Check DB connections - ] - 0
+2022/03/27 11:47:50 - Check DB connections - ======================================= - 0
 2022/03/27 11:47:50 - Check DB connections - [1] connections were in error. - 1
-2022/03/27 11:47:50 - Check DB connections - [0] connections were successfully checked.
-2022/03/27 11:47:50 - Check DB connections - =======================================
-2022/03/27 11:47:50 - demoLineage - Starting action [Query for recent changes]
-2022/03/27 11:47:50 - demoLineage - exec(2, 0, Query for recent changes)
-2022/03/27 11:47:50 - Query for recent changes - Starting action
-2022/03/27 11:47:50 - dvdrental - New database connection defined
+2022/03/27 11:47:50 - Check DB connections - [0] connections were successfully checked. - 0
+2022/03/27 11:47:50 - Check DB connections - ======================================= - 0
+2022/03/27 11:47:50 - demoLineage - Starting action [Query for recent changes] - 0
+2022/03/27 11:47:50 - demoLineage - exec(2, 0, Query for recent changes) - 0
+2022/03/27 11:47:50 - Query for recent changes - Starting action - 0
+2022/03/27 11:47:50 - dvdrental - New database connection defined - 0
 2022/03/27 11:47:52 - Query for recent changes - ERROR: An error occurred executing this action : - 1
 2022/03/27 11:47:52 - Query for recent changes - Error occurred while trying to connect to the database - 1
-2022/03/27 11:47:52 - Query for recent changes - 
+2022/03/27 11:47:52 - Query for recent changes - 0
 2022/03/27 11:47:52 - Query for recent changes - Error connecting to database: (using class org.postgresql.Driver) - 1
 2022/03/27 11:47:52 - Query for recent changes - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. - 1
-2022/03/27 11:47:52 - demoLineage - Starting action [Check Neo4j Connection]
-2022/03/27 11:47:52 - demoLineage - exec(3, 0, Check Neo4j Connection)
-2022/03/27 11:47:52 - Check Neo4j Connection - Starting action
+2022/03/27 11:47:52 - demoLineage - Starting action [Check Neo4j Connection] - 0
+2022/03/27 11:47:52 - demoLineage - exec(3, 0, Check Neo4j Connection) - 0
+2022/03/27 11:47:52 - Check Neo4j Connection - Starting action - 0
 2022/03/27 11:47:54 - Check Neo4j Connection - ERROR: Error on connection: Example - 1
 2022/03/27 11:47:54 - Check Neo4j Connection - ERROR: java.lang.Exception: Unable to connect to database 'Example' : Failed to discover an available server - 1
 2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.neo4j.shared.NeoConnection.test(NeoConnection.java:210) - 1
