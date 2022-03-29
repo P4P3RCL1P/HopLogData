@@ -24,10 +24,10 @@
 2022/03/27 11:47:48 - dvdrental - New database connection defined - 0
 2022/03/27 11:47:50 - Check DB connections - ERROR: Cannot connect to database [dvdrental] (connection [dvdrental]). Exception : [org.apache.hop.core.exception.HopDatabaseException: - 1
 2022/03/27 11:47:50 - Check DB connections - Error occurred while trying to connect to the database - 1
-2022/03/27 11:47:50 - Check DB connections -
+2022/03/27 11:47:50 - Check DB connections -  - 0
 2022/03/27 11:47:50 - Check DB connections - Error connecting to database: (using class org.postgresql.Driver) - 1
 2022/03/27 11:47:50 - Check DB connections - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. - 1
-2022/03/27 11:47:50 - Check DB connections - - 0
+2022/03/27 11:47:50 - Check DB connections -  - 0
 2022/03/27 11:47:50 - Check DB connections - ] - 0
 2022/03/27 11:47:50 - Check DB connections - ======================================= - 0
 2022/03/27 11:47:50 - Check DB connections - [1] connections were in error. - 1
@@ -39,7 +39,7 @@
 2022/03/27 11:47:50 - dvdrental - New database connection defined - 0
 2022/03/27 11:47:52 - Query for recent changes - ERROR: An error occurred executing this action : - 1
 2022/03/27 11:47:52 - Query for recent changes - Error occurred while trying to connect to the database - 1
-2022/03/27 11:47:52 - Query for recent changes - 0
+2022/03/27 11:47:52 - Query for recent changes -  - 0
 2022/03/27 11:47:52 - Query for recent changes - Error connecting to database: (using class org.postgresql.Driver) - 1
 2022/03/27 11:47:52 - Query for recent changes - Connection to localhost:5432 refused. Check that the hostname and port are correct and that the postmaster is accepting TCP/IP connections. - 1
 2022/03/27 11:47:52 - demoLineage - Starting action [Check Neo4j Connection] - 0
