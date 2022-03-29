@@ -61,7 +61,7 @@
 2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.neo4j.driver.GraphDatabase.routingDriver(GraphDatabase.java:179) - 1
 2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.neo4j.shared.NeoConnection.getDriver(NeoConnection.java:407) - 1
 2022/03/27 11:47:54 - Check Neo4j Connection - 	at org.apache.hop.neo4j.shared.NeoConnection.test(NeoConnection.java:196) - 1
-2022/03/27 11:47:54 - Check Neo4j Connection - 	... 9 more
+2022/03/27 11:47:54 - Check Neo4j Connection - 	... 9 more - 0
 2022/03/27 11:47:54 - Check Neo4j Connection - 1 Neo4j connections tested with 1 error(s) - 1
 2022/03/27 11:47:54 - demoLineage - Starting action [NEO4J CONNECTION ERRORS] - 0
 2022/03/27 11:47:54 - demoLineage - exec(4, 0, NEO4J CONNECTION ERRORS) - 0
