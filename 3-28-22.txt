@@ -33,7 +33,7 @@
 2022/03/28 19:10:19 - Query for recent changes - Starting action - 0
 2022/03/28 19:10:19 - dvdrental - New database connection defined - 0
 2022/03/28 19:10:19 - Query for recent changes - Running SQL :SELECT * FROM logging.table_history WHERE tstamp > now() - INTERVAL '12 MONTH' - 0
-2022/03/28 19:10:19 - dvdrental - launch SELECT statement:  - 0
+2022/03/28 19:10:19 - dvdrental - launch SELECT statement: - 0
 2022/03/28 19:10:19 - dvdrental - SELECT * FROM logging.table_history WHERE tstamp > now() - INTERVAL '12 MONTH' - 0
 2022/03/28 19:10:19 - dvdrental - [1], [2021/08/02 16:48:34.528942000], [public], [t_trig], [INSERT], [admin], [{"id":1,"name":"hans\n"}], [null] - 0
 2022/03/28 19:10:19 - dvdrental - [2], [2021/08/02 16:48:56.568732000], [public], [t_trig], [UPDATE], [admin], [{"id":10,"name":"paul"}], [{"id":1,"name":"hans\n"}] - 0
@@ -542,9 +542,9 @@
 2022/03/28 19:10:20 - Filter Insert.0 - Sending row to false :write has_update : [6], [2021/08/03 09:54:17.029499000], [public], [t_trig], [UPDATE], [admin], [{"id":1,"name":"hans"}], [{"id":200,"name":"joe\n"}], [Postgres], [13] - 0
 2022/03/28 19:10:20 - Get Neo4j Logging Info.0 - System info returned: [1], [2021/08/02 16:48:34.528942000], [public], [t_trig], [INSERT], [admin], [{"id":1,"name":"hans\n"}], [null], [Postgres], [13] - 0
 2022/03/28 19:10:20 - Write has_schema.0 - Signaling 'output done' to 1 output rowsets. - 0
-2022/03/28 19:10:20 - Write has_schema.0 - Running Cypher: UNWIND $props as pr  - 0
-2022/03/28 19:10:20 - Write has_schema.0 - MATCH( f:Table { table: pr.p3, schema: pr.p2, version: pr.p9 })  - 0
-2022/03/28 19:10:20 - Write has_schema.0 - MATCH( t:Schema { schema: pr.p2, version: pr.p9 })  - 0
+2022/03/28 19:10:20 - Write has_schema.0 - Running Cypher: UNWIND $props as pr - 0
+2022/03/28 19:10:20 - Write has_schema.0 - MATCH( f:Table { table: pr.p3, schema: pr.p2, version: pr.p9 }) - 0
+2022/03/28 19:10:20 - Write has_schema.0 - MATCH( t:Schema { schema: pr.p2, version: pr.p9 }) - 0
 2022/03/28 19:10:20 - Write has_schema.0 - CREATE (f)-[r:HAS_SCHEMA]->(t) - 0
 2022/03/28 19:10:20 - Get Neo4j Logging Info.0 - System info returned: [3], [2021/08/03 09:52:23.309899000], [public], [t_trig], [INSERT], [admin], [{"id":2,"name":"james"}], [null], [Postgres], [13] - 0
 2022/03/28 19:10:20 - Write has_schema.0 - properties list size : 1 - 0
@@ -557,13 +557,13 @@
 2022/03/28 19:10:20 - Get Neo4j Logging Info.0 - System info returned: [1], [2021/08/02 16:48:34.528942000], [public], [t_trig], [INSERT], [admin], [{"id":1,"name":"hans\n"}], [null], [Postgres], [13] - 0
 2022/03/28 19:10:20 - Write has_operation.0 - Signaling 'output done' to 1 output rowsets. - 0
 2022/03/28 19:10:20 - Filter Delete.0 - Signaling 'output done' to 2 output rowsets. - 0
-2022/03/28 19:10:20 - Write has_table.0 - Running Cypher: UNWIND $props as pr  - 0
-2022/03/28 19:10:20 - Write has_table.0 - MATCH( f:Schema { schema: pr.p2, version: pr.p9 })  - 0
-2022/03/28 19:10:20 - Write has_table.0 - MATCH( t:Table { table: pr.p3, schema: pr.p2, version: pr.p9 })  - 0
+2022/03/28 19:10:20 - Write has_table.0 - Running Cypher: UNWIND $props as pr - 0
+2022/03/28 19:10:20 - Write has_table.0 - MATCH( f:Schema { schema: pr.p2, version: pr.p9 }) - 0
+2022/03/28 19:10:20 - Write has_table.0 - MATCH( t:Table { table: pr.p3, schema: pr.p2, version: pr.p9 }) - 0
 2022/03/28 19:10:20 - Write has_table.0 - CREATE (f)-[r:HAS_TABLE]->(t) - 0
-2022/03/28 19:10:20 - Write has_operation.0 - Running Cypher: UNWIND $props as pr  - 0
-2022/03/28 19:10:20 - Write has_operation.0 - MATCH( f:Table { table: pr.p3, schema: pr.p2, version: pr.p9 })  - 0
-2022/03/28 19:10:20 - Write has_operation.0 - MATCH( t:Operation { operation: pr.p4 })  - 0
+2022/03/28 19:10:20 - Write has_operation.0 - Running Cypher: UNWIND $props as pr - 0
+2022/03/28 19:10:20 - Write has_operation.0 - MATCH( f:Table { table: pr.p3, schema: pr.p2, version: pr.p9 }) - 0
+2022/03/28 19:10:20 - Write has_operation.0 - MATCH( t:Operation { operation: pr.p4 }) - 0
 2022/03/28 19:10:20 - Write has_operation.0 - CREATE (f)-[r:HAS_OPERATION]->(t) - 0
 2022/03/28 19:10:20 - Filter Delete.0 - Finished processing (I=0, O=0, R=7, W=7, U=0, E=0) - 0
 2022/03/28 19:10:20 - Write has_operation.0 - properties list size : 7 - 0
@@ -576,9 +576,9 @@
 2022/03/28 19:10:20 - Filter Insert.0 - Signaling 'output done' to 2 output rowsets. - 0
 2022/03/28 19:10:20 - Filter Insert.0 - Finished processing (I=0, O=0, R=6, W=6, U=0, E=0) - 0
 2022/03/28 19:10:20 - Get Neo4j Logging Info.0 - System info returned: [3], [2021/08/03 09:52:23.309899000], [public], [t_trig], [INSERT], [admin], [{"id":2,"name":"james"}], [null], [Postgres], [13] - 0
-2022/03/28 19:10:20 - Write has_delete.0 - Running Cypher: UNWIND $props as pr  - 0
-2022/03/28 19:10:20 - Write has_delete.0 - MATCH( f:Operation { operation: pr.p4 })  - 0
-2022/03/28 19:10:20 - Write has_delete.0 - MATCH( t:Delete { timestamp: pr.p1, oldval: pr.p7, who: pr.p5 })  - 0
+2022/03/28 19:10:20 - Write has_delete.0 - Running Cypher: UNWIND $props as pr - 0
+2022/03/28 19:10:20 - Write has_delete.0 - MATCH( f:Operation { operation: pr.p4 }) - 0
+2022/03/28 19:10:20 - Write has_delete.0 - MATCH( t:Delete { timestamp: pr.p1, oldval: pr.p7, who: pr.p5 }) - 0
 2022/03/28 19:10:20 - Write has_delete.0 - CREATE (f)-[r:HAS_DELETE]->(t) - 0
 2022/03/28 19:10:20 - Write has_delete.0 - properties list size : 1 - 0
 2022/03/28 19:10:20 - Write has_delete.0 - Finished processing (I=0, O=1, R=1, W=1, U=0, E=0) - 0
@@ -588,13 +588,13 @@
 2022/03/28 19:10:20 - Get Neo4j Logging Info.0 - System info returned: [6], [2021/08/03 09:54:17.029499000], [public], [t_trig], [UPDATE], [admin], [{"id":1,"name":"hans"}], [{"id":200,"name":"joe\n"}], [Postgres], [13] - 0
 2022/03/28 19:10:20 - write has_insert.0 - Signaling 'output done' to 1 output rowsets. - 0
 2022/03/28 19:10:20 - write has_update.0 - Signaling 'output done' to 1 output rowsets. - 0
-2022/03/28 19:10:20 - write has_insert.0 - Running Cypher: UNWIND $props as pr  - 0
-2022/03/28 19:10:20 - write has_insert.0 - MATCH( f:Operation { operation: pr.p4 })  - 0
-2022/03/28 19:10:20 - write has_insert.0 - MATCH( t:Insert { timestamp: pr.p1, newval: pr.p6, who: pr.p5 })  - 0
+2022/03/28 19:10:20 - write has_insert.0 - Running Cypher: UNWIND $props as pr - 0
+2022/03/28 19:10:20 - write has_insert.0 - MATCH( f:Operation { operation: pr.p4 }) - 0
+2022/03/28 19:10:20 - write has_insert.0 - MATCH( t:Insert { timestamp: pr.p1, newval: pr.p6, who: pr.p5 }) - 0
 2022/03/28 19:10:20 - write has_insert.0 - CREATE (f)-[r:HAS_INSERT]->(t) - 0
-2022/03/28 19:10:20 - write has_update.0 - Running Cypher: UNWIND $props as pr  - 0
-2022/03/28 19:10:20 - write has_update.0 - MATCH( f:Update { timestamp: pr.p1, newval: pr.p6, oldval: pr.p7, who: pr.p5 })  - 0
-2022/03/28 19:10:20 - write has_update.0 - MATCH( t:Operation { operation: pr.p4 })  - 0
+2022/03/28 19:10:20 - write has_update.0 - Running Cypher: UNWIND $props as pr - 0
+2022/03/28 19:10:20 - write has_update.0 - MATCH( f:Update { timestamp: pr.p1, newval: pr.p6, oldval: pr.p7, who: pr.p5 }) - 0
+2022/03/28 19:10:20 - write has_update.0 - MATCH( t:Operation { operation: pr.p4 }) - 0
 2022/03/28 19:10:20 - write has_update.0 - CREATE (f)-[r:HAS_UPDATE]->(t) - 0
 2022/03/28 19:10:20 - write has_insert.0 - properties list size : 2 - 0
 2022/03/28 19:10:20 - write has_update.0 - properties list size : 4 - 0
