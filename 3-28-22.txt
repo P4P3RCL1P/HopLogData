@@ -32,9 +32,9 @@
 2022/03/28 19:10:19 - demoLineage - exec(2, 0, Query for recent changes) - 0
 2022/03/28 19:10:19 - Query for recent changes - Starting action - 0
 2022/03/28 19:10:19 - dvdrental - New database connection defined - 0
-2022/03/28 19:10:19 - Query for recent changes - Running SQL :SELECT * FROM logging.table_history WHERE tstamp > now() - INTERVAL '12 MONTH' - 0
+2022/03/28 19:10:19 - Query for recent changes - Running SQL :SELECT * FROM logging.table_history WHERE tstamp > now()-INTERVAL '12 MONTH' - 0
 2022/03/28 19:10:19 - dvdrental - launch SELECT statement: - 0
-2022/03/28 19:10:19 - dvdrental - SELECT * FROM logging.table_history WHERE tstamp > now() - INTERVAL '12 MONTH' - 0
+2022/03/28 19:10:19 - dvdrental - SELECT * FROM logging.table_history WHERE tstamp > now()-INTERVAL '12 MONTH' - 0
 2022/03/28 19:10:19 - dvdrental - [1], [2021/08/02 16:48:34.528942000], [public], [t_trig], [INSERT], [admin], [{"id":1,"name":"hans\n"}], [null] - 0
 2022/03/28 19:10:19 - dvdrental - [2], [2021/08/02 16:48:56.568732000], [public], [t_trig], [UPDATE], [admin], [{"id":10,"name":"paul"}], [{"id":1,"name":"hans\n"}] - 0
 2022/03/28 19:10:19 - dvdrental - [3], [2021/08/03 09:52:23.309899000], [public], [t_trig], [INSERT], [admin], [{"id":2,"name":"james"}], [null] - 0
